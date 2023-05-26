@@ -61,8 +61,6 @@ export default function App() {
       const { code } = response.params;
 
       handleGithubOAuthCode(code) 
-    } else {
-      console.log(`Ò response é: ${response}`)
     }
   }, [response]);
 
@@ -87,7 +85,7 @@ export default function App() {
           <Text className='text-center font-body text-base leading-relaxed text-gray-100'>Colecione momentos marcantes da sua jornada e compartilhe (se quiser) com o mundo!</Text>
         </View>
 
-        <TouchableOpacity activeOpacity={0.7} className='rounded-full bg-green-500 px-5 py-2' onPress={() => signInWithGithub}>
+        <TouchableOpacity activeOpacity={0.7} className='rounded-full bg-green-500 px-5 py-2' onPress={() => signInWithGithub()}>
           <Text className='font-alt text-sm uppercase text-black'>Cadastrar lembrança</Text>
         </TouchableOpacity>
       </View>
