@@ -1,3 +1,4 @@
+import { MediaPicker } from "@/components/MediaPicker";
 import { Camera, ChevronLeft } from "lucide-react";
 import Link from "next/link";
 
@@ -26,7 +27,8 @@ export default function NewMemory() {
                         Tornar memória pública
                     </label>
                 </div>
-                <input type="file" id="media" className="invisible w-0 h-0" />
+
+                <MediaPicker/>
 
                 <textarea 
                     placeholder="Fique livre para adicionar fotos, vídeos e relatos sobre essa experiência que você quer lembrar para sempre." 
